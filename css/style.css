@@ -179,3 +179,24 @@ textarea{min-height:120px;resize:vertical}
     display: none; /* hide scrollbar on iOS/Chrome */
   }
 }
+/* Fix mobile header spacing */
+@media (max-width: 768px) {
+  header.nav {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  header.nav .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header.nav .brand {
+    margin-left: 2px;
+  }
+
+  .navlinks {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
