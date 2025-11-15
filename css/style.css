@@ -151,3 +151,31 @@ textarea{min-height:120px;resize:vertical}
 @media(max-width: 800px) {
   .desktop-header { display: none; }
 }
+/* --- MOBILE NAV FIX --- */
+@media (max-width: 768px) {
+  header.nav .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 0 6px;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navlinks a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .navlinks::-webkit-scrollbar {
+    display: none; /* hide scrollbar on iOS/Chrome */
+  }
+}
