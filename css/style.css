@@ -116,3 +116,38 @@ textarea{min-height:120px;resize:vertical}
     order:-1;
   }
 }
+/* DESKTOP HEADER FIX */
+.desktop-header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-header .links {
+  display: flex;
+  gap: 26px;
+}
+
+.desktop-header .links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+}
+
+.desktop-header .brand {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Ensure mobile header is hidden on desktop */
+@media(min-width: 801px) {
+  .mobile-header { display: none; }
+  .mobile-menu { display: none !important; }
+}
+
+/* Ensure desktop header hidden on mobile (already done but reinforcing) */
+@media(max-width: 800px) {
+  .desktop-header { display: none; }
+}
